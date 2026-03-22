@@ -1,0 +1,13 @@
+{
+  "name": "Greeting Dance",
+  "description": "Otto says hello with a little dance routine",
+  "steps": [
+    { "command": "SING:11", "delay_after": 500 },
+    { "command": "UPDOWN:3", "delay_after": 300 },
+    { "command": "SWING:4", "delay_after": 300 },
+    { "command": "BEND:1:1", "delay_after": 200 },
+    { "command": "BEND:1:-1", "delay_after": 200 },
+    { "command": "SING:12" },
+    { "command": "HOME" }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Party Time",
+  "description": "Full dance party — moonwalk, jitter, flapping, and more!",
+  "steps": [
+    { "command": "SING:12", "delay_after": 300 },
+    { "command": "SPEED:800" },
+    { "command": "DANCE", "delay_after": 500 },
+    { "command": "JITTER:4", "delay_after": 300 },
+    { "command": "FLAPPING:4", "delay_after": 300 },
+    { "command": "CRUSAITO:4", "delay_after": 300 },
+    { "command": "TIPTOE:4", "delay_after": 300 },
+    { "command": "SWING:4", "delay_after": 300 },
+    { "command": "ASCEND:4", "delay_after": 300 },
+    { "command": "UPDOWN:3", "delay_after": 200 },
+    { "command": "SING:12" },
+    { "command": "SPEED:1000" },
+    { "command": "HOME" }
+  ]
+}

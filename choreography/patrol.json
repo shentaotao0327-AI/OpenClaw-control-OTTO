@@ -1,0 +1,16 @@
+{
+  "name": "Patrol Route",
+  "description": "Walk a square patrol pattern and return home",
+  "steps": [
+    { "command": "WALK:4:1", "delay_after": 300 },
+    { "command": "TURN:3:1", "delay_after": 300 },
+    { "command": "WALK:4:1", "delay_after": 300 },
+    { "command": "TURN:3:1", "delay_after": 300 },
+    { "command": "WALK:4:1", "delay_after": 300 },
+    { "command": "TURN:3:1", "delay_after": 300 },
+    { "command": "WALK:4:1", "delay_after": 300 },
+    { "command": "TURN:3:1", "delay_after": 300 },
+    { "command": "SING:11" },
+    { "command": "HOME" }
+  ]
+}
