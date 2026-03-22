@@ -130,18 +130,17 @@ If `PING` returns `OTTO9 READY` followed by `OK PONG`, the firmware is working.
 ```bash
 # On the workstation
 python otto_server.py
-# Starts on http://localhost:8266
 ```
 
 Test it:
 ```bash
-curl "http://localhost:8266/health"
+curl "http://localhost:your port/health"
 # {"status": "ok", ...}
 
-curl "http://localhost:8266/cmd?q=PING"
+curl "http://localhost:your port/cmd?q=PING"
 # {"status": "ok", "value": null, "raw": ["OK PONG"]}
 
-curl "http://localhost:8266/cmd?q=BEEP"
+curl "http://localhost:your port/cmd?q=BEEP"
 # {"status": "ok", "value": null, "raw": ["OK"]}
 ```
 
@@ -149,14 +148,7 @@ curl "http://localhost:8266/cmd?q=BEEP"
 
 On the workstation, open a terminal and run:
 ```bash
-ssh -R 8266:localhost:8266 YOUR_USER@YOUR_VPS_IP -N
-```
-
-This makes `localhost:8266` on the VPS forward to your workstation's HTTP bridge.
-
-Test from VPS:
-```bash
-curl "http://localhost:8266/health"
+ssh -R port:localhost:port YOUR_USER@YOUR_VPS_IP -N
 ```
 
 ### Step 5: Install the OpenClaw Skill
@@ -270,22 +262,6 @@ sudo usermod -a -G dialout $USER
 - Check if another program is using the port
 - Check the port path in `otto_server.py` (default: `/dev/ttyUSB0`)
 - Try: `python otto_server.py`  and check error messages
-
-### Problem: SSH tunnel not working
-```bash
-# On workstation:
-ssh -R 8266:localhost:8266 user@vps -N -v
-# Check for "remote forwarding" success message
-
-# On VPS, test:
-curl http://localhost:8266/health
-```
-
-### Problem: OpenClaw agent doesn't respond to commands
-1. Check SSH tunnel is running
-2. Check `otto_server.py` is running on workstation
-3. Test: `curl http://localhost:8266/health` from VPS
-4. Check OpenClaw skill is properly configured
 
 ## 🏗️ Architecture Deep Dive
 
