@@ -5,6 +5,8 @@
 </p>
 
 > Control an Otto9 biped robot with natural language through Feishu (or any chat platform), powered by [OpenClaw](https://github.com/openclaw/openclaw) AI agent.
+## ✨ Owner
+This project is owned by Hu Yuan, with the help of Claud opus!!!
 
 ## ✨ What is This?
 
