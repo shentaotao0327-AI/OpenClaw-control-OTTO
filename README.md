@@ -1,7 +1,7 @@
 # OpenClaw Otto9 — AI Chat-Controlled Biped Robot
 
 <p align="center">
-  <img src="docs/architecture.png" alt="Architecture Diagram" width="600">
+  <img src="[https://github.com/shentaotao0327-AI/OpenClaw-control-OTTO/blob/main/docs/Pasted%20image.png]" alt="Architecture Diagram" width="600">
 </p>
 
 > Control an Otto9 biped robot with natural language through Feishu (or any chat platform), powered by [OpenClaw](https://github.com/openclaw/openclaw) AI agent.
